@@ -6,7 +6,8 @@ Please place your Twilio credentials in the **credentials.conf** file.
 
 This program can be used with the *-coin* and *-info* flags.
 
-If you do not use any flags, the price of bitcoin is returned by default.
+If you do not specify flags, the defaults will be used. The default coin
+returned is bitcoin while the default info level is price.
 
 Example:
 
