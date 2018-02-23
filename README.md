@@ -37,3 +37,6 @@ returns the following:
 ```
 The price of Ripple today is $1.02957
 ```
+
+Note: I have created another version of this program with DB functionality.
+You can find that here: https://github.com/Omar-Khawaja/coin-checker-db
