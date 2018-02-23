@@ -8,7 +8,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"twilio"
 )
 
 type Config struct {
@@ -53,11 +52,13 @@ func main() {
 func LoadConfiguration(file string) {
 	configFile, err := ioutil.ReadFile(file)
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
+		return
 	}
 	err = hcl.Decode(&config, string(configFile))
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
+		return
 	}
 }
 
@@ -106,6 +107,6 @@ func getCryptoInfo(coin, info string) error {
 		}
 		msg = str
 	}
-	twilio.SendSMS(msg, config.AccountSid, config.AuthToken, config.ToNumber, config.FromNumber)
+	SendSMS(msg, config.AccountSid, config.AuthToken, config.ToNumber, config.FromNumber)
 	return err
 }

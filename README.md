@@ -13,23 +13,27 @@ Example:
 
 **./main -coin=litecoin -info=all** returns the following data:
 
-Name: Litecoin </br>
-Symbol: LTC </br>
-PriceBtc: 0.0183727 </br>
-TotalSupply: 55201008.0 </br>
-PercentChange24H: -0.24 </br>
-ID: litecoin </br>
-Rank: 6 </br>
-Two4HVolumeUsd: 503106000.0 </br>
-MarketCapUsd: 8778174719.0 </br>
-PriceUsd: 159.022 </br>
-LastUpdated: 1518546841 </br>
-AvailableSupply: 55201008.0 </br>
-MaxSupply: 84000000.0 </br>
-PercentChange1H: 0.77 </br>
-PercentChange7D: 18.81 </br>
+```
+Name: Litecoin 
+Symbol: LTC 
+PriceBtc: 0.0183727 
+TotalSupply: 55201008.0 
+PercentChange24H: -0.24 
+ID: litecoin 
+Rank: 6 
+Two4HVolumeUsd: 503106000.0 
+MarketCapUsd: 8778174719.0 
+PriceUsd: 159.022 
+LastUpdated: 1518546841 
+AvailableSupply: 55201008.0 
+MaxSupply: 84000000.0 
+PercentChange1H: 0.77 
+PercentChange7D: 18.81 
+```
 
 while **./main -coin=ripple -info=price** (or simply **./main -coin=ripple**)
 returns the following:
 
+```
 The price of Ripple today is $1.02957
+```

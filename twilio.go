@@ -1,4 +1,4 @@
-package twilio
+package main
 
 import (
 	"encoding/json"
@@ -20,7 +20,8 @@ func SendSMS(stats, accountSid, authToken, toNumber string, fromNumber string) {
 	client := &http.Client{}
 	req, err := http.NewRequest("POST", urlStr, msgDataReader)
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
+		return
 	}
 	req.SetBasicAuth(accountSid, authToken)
 	req.Header.Add("Accept", "application/json")
